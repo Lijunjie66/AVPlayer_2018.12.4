@@ -199,7 +199,8 @@ typedef NS_ENUM(NSInteger, PanDirection)
             
             SEL selector = NSSelectorFromString(@"setOrientation:");
             
-            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:@selector(selector)]];
+            // 消息转发机制
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
             
             [invocation setSelector:selector];
             
@@ -223,7 +224,7 @@ typedef NS_ENUM(NSInteger, PanDirection)
             
             SEL selector = NSSelectorFromString(@"setOrientation:");
             
-            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:@selector(selector)]];
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
             
             [invocation setSelector:selector];
             
@@ -379,8 +380,9 @@ typedef NS_ENUM(NSInteger, PanDirection)
 }
 
 #pragma mark -- KVO
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+
     if (object == self.player.currentItem) {
         if ([keyPath isEqualToString:@"status"]) {
             
@@ -552,7 +554,7 @@ typedef NS_ENUM(NSInteger, PanDirection)
     从xx秒开始播放视频跳转
     @param dragedSeconds 视频跳转的秒数
  */
-- (void)seekToTime:(NSInteger)dragedSeconds completionHandler:(nonnull void (^)(BOOL))completionHandler {
+- (void)seekToTime:(NSInteger)dragedSeconds completionHandler:(void (^)(BOOL finished))completionHandler {
     
     if (self.player.currentItem.status == AVPlayerItemStatusReadyToPlay) {
         // 方法seekTime:completionHandler: 不能精准定位
@@ -715,8 +717,7 @@ typedef NS_ENUM(NSInteger, PanDirection)
     // 把player置为nil
     self.player = nil;
     // 其余控件恢复默认设置
-//    self allUI
-//
+    [self allUIBackOriginalInfo];
     
     self.alpha = 1;
 }

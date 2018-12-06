@@ -61,10 +61,8 @@
 		9CF1774521B651C800F6B0E1 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF1770E21B651C800F6B0E1 /* uncheck.png */; };
 		9CF1774621B651C800F6B0E1 /* shareBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF1770F21B651C800F6B0E1 /* shareBtn.png */; };
 		9CF1774721B651C800F6B0E1 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF1771321B651C800F6B0E1 /* UIView+Frame.m */; };
-		9CF1774821B651C800F6B0E1 /* UIView+ViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF1771621B651C800F6B0E1 /* UIView+ViewGeometry.m */; };
 		9CF1774921B651C800F6B0E1 /* UILabel+LXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF1771721B651C800F6B0E1 /* UILabel+LXLabel.m */; };
 		9CF1774A21B651C800F6B0E1 /* LxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF1771821B651C800F6B0E1 /* LxButton.m */; };
-		9CF1774B21B651C800F6B0E1 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF1771921B651C800F6B0E1 /* UIView+UIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,15 +126,11 @@
 		9CF1770D21B651C800F6B0E1 /* 马上就来-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "马上就来-8.png"; sourceTree = "<group>"; };
 		9CF1770E21B651C800F6B0E1 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
 		9CF1770F21B651C800F6B0E1 /* shareBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareBtn.png; sourceTree = "<group>"; };
-		9CF1771121B651C800F6B0E1 /* UIView+ViewGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewGeometry.h"; sourceTree = "<group>"; };
 		9CF1771221B651C800F6B0E1 /* UILabel+LXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXLabel.h"; sourceTree = "<group>"; };
 		9CF1771321B651C800F6B0E1 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		9CF1771421B651C800F6B0E1 /* LxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxButton.h; sourceTree = "<group>"; };
-		9CF1771521B651C800F6B0E1 /* UIView+UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewController.h"; sourceTree = "<group>"; };
-		9CF1771621B651C800F6B0E1 /* UIView+ViewGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewGeometry.m"; sourceTree = "<group>"; };
 		9CF1771721B651C800F6B0E1 /* UILabel+LXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXLabel.m"; sourceTree = "<group>"; };
 		9CF1771821B651C800F6B0E1 /* LxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxButton.m; sourceTree = "<group>"; };
-		9CF1771921B651C800F6B0E1 /* UIView+UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewController.m"; sourceTree = "<group>"; };
 		9CF1771A21B651C800F6B0E1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		9CF1774C21B6524500F6B0E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,12 +257,8 @@
 		9CF1771021B651C800F6B0E1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				9CF1771121B651C800F6B0E1 /* UIView+ViewGeometry.h */,
-				9CF1771621B651C800F6B0E1 /* UIView+ViewGeometry.m */,
 				9CF1771221B651C800F6B0E1 /* UILabel+LXLabel.h */,
 				9CF1771721B651C800F6B0E1 /* UILabel+LXLabel.m */,
-				9CF1771521B651C800F6B0E1 /* UIView+UIViewController.h */,
-				9CF1771921B651C800F6B0E1 /* UIView+UIViewController.m */,
 				9CF1771421B651C800F6B0E1 /* LxButton.h */,
 				9CF1771821B651C800F6B0E1 /* LxButton.m */,
 				9CF1771A21B651C800F6B0E1 /* UIView+Frame.h */,
@@ -396,9 +386,7 @@
 				9CF1774921B651C800F6B0E1 /* UILabel+LXLabel.m in Sources */,
 				9CF176C721B64EAE00F6B0E1 /* ViewController.m in Sources */,
 				9CF176DD21B64FD200F6B0E1 /* ControlView.m in Sources */,
-				9CF1774821B651C800F6B0E1 /* UIView+ViewGeometry.m in Sources */,
 				9CF1774721B651C800F6B0E1 /* UIView+Frame.m in Sources */,
-				9CF1774B21B651C800F6B0E1 /* UIView+UIViewController.m in Sources */,
 				9CF176DA21B64F5600F6B0E1 /* PlayerViewController.m in Sources */,
 				9CF176D221B64EAF00F6B0E1 /* main.m in Sources */,
 				9CF176C421B64EAE00F6B0E1 /* AppDelegate.m in Sources */,
@@ -478,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -531,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -547,7 +535,7 @@
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/geraint/Desktop/AVPlayer_2018.12.4/AVPlayer_2018.12.4/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/geraint/Desktop/New-project/AVPlayer_2018.12.4/AVPlayer_2018.12.4/PrefixHeader.pch";
 				INFOPLIST_FILE = AVPlayer_2018.12.4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,7 +555,7 @@
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/geraint/Desktop/AVPlayer_2018.12.4/AVPlayer_2018.12.4/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/geraint/Desktop/New-project/AVPlayer_2018.12.4/AVPlayer_2018.12.4/PrefixHeader.pch";
 				INFOPLIST_FILE = AVPlayer_2018.12.4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

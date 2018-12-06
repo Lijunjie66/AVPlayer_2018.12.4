@@ -19,7 +19,7 @@ static NSString *string = @"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d
 @implementation PlayerViewController
 
 - (void)dealloc {
-    NSLog(@"%@", self.class);
+    NSLog(@"%@😁", self.class);
 }
 
 - (void)viewDidLoad {
